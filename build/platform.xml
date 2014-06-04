@@ -1,0 +1,18 @@
+<platform xmlns="http://ns.adobe.com/air/extension/3.9">
+    <description > Nothing </description>
+    <copyright>2013 czqsoft</copyright>
+    <sdkVersion>6.0</sdkVersion>
+    <linkerOptions>
+		<option>-ios_version_min 4.3</option>
+		<option>-framework StoreKit</option>
+        <option>-framework CoreTelephony</option>
+        <option>-framework MessageUI</option>
+        <option>-framework AdSupport</option>
+        <option>-framework AVFoundation</option>
+        <option>-framework SystemConfiguration</option>
+        <option>-framework CoreLocation</option>
+        <option>-framework CoreGraphics</option>
+        <option>-framework UIKit</option>
+        <option>-framework Foundation</option>
+	</linkerOptions>
+</platform>

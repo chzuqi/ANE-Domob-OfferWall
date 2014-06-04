@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" applicationDPI="240">
+	
+	<fx:Script>
+		<![CDATA[
+			import cn.domod.ane.DMOfferWallExtension;
+			protected function button1_clickHandler(event:MouseEvent):void
+			{
+				// TODO Auto-generated method stub
+				DMOfferWallExtension.DMInit(pid.text);
+				DMOfferWallExtension.getInstance().addEventListener(StatusEvent.STATUS, ons);
+			}
+			
+			private function ons(e:StatusEvent):void
+			{
+				txtarea.appendText("[" + e.code + "]: {" + e.level + "}"); 
+			}
+			
+			protected function button2_clickHandler(event:MouseEvent):void
+			{
+				// TODO Auto-generated method stub
+				DMOfferWallExtension.DMConsume(txtpoint.text);
+			}
+			
+			protected function button3_clickHandler(event:MouseEvent):void
+			{
+				// TODO Auto-generated method stub
+				DMOfferWallExtension.DMcheckSocre();
+			}
+			
+			protected function button4_clickHandler(event:MouseEvent):void
+			{
+				// TODO Auto-generated method stub
+				DMOfferWallExtension.DMcheckStatus();
+			}
+			
+			protected function button5_clickHandler(event:MouseEvent):void
+			{
+				// TODO Auto-generated method stub
+				DMOfferWallExtension.DMShowOfferWall();
+			}
+			
+			protected function button6_clickHandler(event:MouseEvent):void
+			{
+				// TODO Auto-generated method stub
+				DMOfferWallExtension.DMShowVideoOfferWall();
+			}
+			
+			protected function button7_clickHandler(event:MouseEvent):void
+			{
+				// TODO Auto-generated method stub
+				DMOfferWallExtension.DMLoadInterstitialOfferWall();
+			}
+			
+			protected function button8_clickHandler(event:MouseEvent):void
+			{
+				// TODO Auto-generated method stub
+				DMOfferWallExtension.DMShowInterstitialOfferWall();
+			}
+			
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+	</fx:Declarations>
+	<s:Button x="16" y="29" width="125" label="init" click="button1_clickHandler(event)"/>
+	<s:TextInput id="pid" x="168" y="29" width="285" height="65" prompt="publisherid"
+				 text="56OJwSKouNHR7PMnaj"/>
+	<s:Button x="16" y="111" width="145" height="53" label="consume"
+			  click="button2_clickHandler(event)"/>
+	<s:TextInput id="txtpoint" x="168" y="113" width="285" prompt="point"/>
+	<s:Button x="16" y="171" width="222" height="42" label="check score"
+			  click="button3_clickHandler(event)"/>
+	<s:Button x="16" y="270" width="222" height="42" label="load Interstitial"
+			  click="button7_clickHandler(event)"/>
+	<s:Button x="253" y="270" width="222" height="42" label="show Interstitial"
+			  click="button8_clickHandler(event)"/>
+	<s:Button x="249" y="172" width="222" height="42" label="check status"
+			  click="button4_clickHandler(event)"/>
+	<s:Button x="16" y="221" width="222" height="42" label="wall" click="button5_clickHandler(event)"/>
+	<s:Button x="248" y="221" width="222" height="42" label="video"
+			  click="button6_clickHandler(event)"/>
+	<s:TextArea id="txtarea" x="13" y="319" width="456" height="365"/>
+</s:Application>

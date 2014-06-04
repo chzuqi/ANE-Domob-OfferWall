@@ -1,0 +1,32 @@
+<extension xmlns="http://ns.adobe.com/air/extension/3.9">
+  <id>cn.domod.dmofferwall.extension</id>
+  <versionNumber>1</versionNumber>
+  <platforms>
+    <platform name="iPhone-ARM">
+        <applicationDeployment>
+            <nativeLibrary>libDomodOfferWall.a</nativeLibrary>
+            <initializer>DomodOfferWallExtInitializer</initializer>
+            <finalizer>DomodOfferWallExtFinalizer</finalizer>
+        </applicationDeployment>
+    </platform>
+    <platform name="iPhone-x86">
+        <applicationDeployment>
+            <nativeLibrary>libDomodOfferWall.a</nativeLibrary>
+            <initializer>DomodOfferWallExtInitializer</initializer>
+            <finalizer>DomodOfferWallExtFinalizer</finalizer>
+        </applicationDeployment>
+    </platform>
+
+    <!--<platform name="Android-ARM">
+        <applicationDeployment> 
+            <nativeLibrary>libUMFeedback.jar</nativeLibrary>
+            <initializer>com.czqsoft.ane.UMFeedbackExtension</initializer>
+            <finalizer>com.czqsoft.ane.UMFeedbackExtension</finalizer>
+        </applicationDeployment> 
+    </platform> -->
+    
+    <platform name="default"> 
+        <applicationDeployment/> 
+    </platform> 
+  </platforms>
+</extension>

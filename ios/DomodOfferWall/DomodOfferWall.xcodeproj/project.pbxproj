@@ -1,0 +1,345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6128452A1936DC81006EC77B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 612845291936DC81006EC77B /* Foundation.framework */; };
+		6128452E1936DC81006EC77B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6128452D1936DC81006EC77B /* UIKit.framework */; };
+		612845321936DC81006EC77B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 612845311936DC81006EC77B /* CoreGraphics.framework */; };
+		612845341936DC81006EC77B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 612845331936DC81006EC77B /* SystemConfiguration.framework */; };
+		6128453E1936DC81006EC77B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6128453D1936DC81006EC77B /* CoreLocation.framework */; };
+		612845401936DC81006EC77B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6128453F1936DC81006EC77B /* CoreMedia.framework */; };
+		612845441936DC81006EC77B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 612845431936DC81006EC77B /* AVFoundation.framework */; };
+		612845561936DC81006EC77B /* DomodOfferWall.m in Sources */ = {isa = PBXBuildFile; fileRef = 612845551936DC81006EC77B /* DomodOfferWall.m */; };
+		612845691936E5CA006EC77B /* DMOfferWallManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 612845671936E5CA006EC77B /* DMOfferWallManager.h */; };
+		6128456A1936E5CA006EC77B /* libDMOfferWallSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 612845681936E5CA006EC77B /* libDMOfferWallSDK.a */; };
+		6128456E1936E7C5006EC77B /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6128456D1936E7C5006EC77B /* AdSupport.framework */; };
+		612845701936E7D5006EC77B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6128456F1936E7D5006EC77B /* StoreKit.framework */; };
+		612845731936EFA8006EC77B /* DomodExtensionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 612845711936EFA8006EC77B /* DomodExtensionHandler.h */; };
+		612845741936EFA8006EC77B /* DomodExtensionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 612845721936EFA8006EC77B /* DomodExtensionHandler.m */; };
+		61284577193711AA006EC77B /* DMTypeConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = 61284575193711AA006EC77B /* DMTypeConversion.h */; };
+		61284578193711AA006EC77B /* DMTypeConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 61284576193711AA006EC77B /* DMTypeConversion.m */; };
+		61F04502193DAFA300F5BCE6 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61F04501193DAFA300F5BCE6 /* CoreTelephony.framework */; };
+		61F04504193DAFDC00F5BCE6 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61F04503193DAFDC00F5BCE6 /* MessageUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		612845261936DC81006EC77B /* libDomodOfferWall.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDomodOfferWall.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		612845291936DC81006EC77B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6128452B1936DC81006EC77B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		6128452D1936DC81006EC77B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6128452F1936DC81006EC77B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		612845311936DC81006EC77B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		612845331936DC81006EC77B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		612845351936DC81006EC77B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		612845371936DC81006EC77B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		612845391936DC81006EC77B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6128453B1936DC81006EC77B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		6128453D1936DC81006EC77B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6128453F1936DC81006EC77B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		612845411936DC81006EC77B /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		612845431936DC81006EC77B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		612845451936DC81006EC77B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		612845531936DC81006EC77B /* DomodOfferWall-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DomodOfferWall-Prefix.pch"; sourceTree = "<group>"; };
+		612845541936DC81006EC77B /* DomodOfferWall.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DomodOfferWall.h; sourceTree = "<group>"; };
+		612845551936DC81006EC77B /* DomodOfferWall.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DomodOfferWall.m; sourceTree = "<group>"; };
+		612845671936E5CA006EC77B /* DMOfferWallManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMOfferWallManager.h; sourceTree = "<group>"; };
+		612845681936E5CA006EC77B /* libDMOfferWallSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libDMOfferWallSDK.a; sourceTree = "<group>"; };
+		6128456B1936E7B6006EC77B /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		6128456D1936E7C5006EC77B /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		6128456F1936E7D5006EC77B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		612845711936EFA8006EC77B /* DomodExtensionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DomodExtensionHandler.h; sourceTree = "<group>"; };
+		612845721936EFA8006EC77B /* DomodExtensionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DomodExtensionHandler.m; sourceTree = "<group>"; };
+		61284575193711AA006EC77B /* DMTypeConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMTypeConversion.h; sourceTree = "<group>"; };
+		61284576193711AA006EC77B /* DMTypeConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMTypeConversion.m; sourceTree = "<group>"; };
+		61F044FD193DA91C00F5BCE6 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		61F044FF193DABFC00F5BCE6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		61F04501193DAFA300F5BCE6 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		61F04503193DAFDC00F5BCE6 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		612845231936DC81006EC77B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61F04502193DAFA300F5BCE6 /* CoreTelephony.framework in Frameworks */,
+				61F04504193DAFDC00F5BCE6 /* MessageUI.framework in Frameworks */,
+				6128456E1936E7C5006EC77B /* AdSupport.framework in Frameworks */,
+				612845401936DC81006EC77B /* CoreMedia.framework in Frameworks */,
+				612845441936DC81006EC77B /* AVFoundation.framework in Frameworks */,
+				612845701936E7D5006EC77B /* StoreKit.framework in Frameworks */,
+				6128456A1936E5CA006EC77B /* libDMOfferWallSDK.a in Frameworks */,
+				612845341936DC81006EC77B /* SystemConfiguration.framework in Frameworks */,
+				6128453E1936DC81006EC77B /* CoreLocation.framework in Frameworks */,
+				612845321936DC81006EC77B /* CoreGraphics.framework in Frameworks */,
+				6128452E1936DC81006EC77B /* UIKit.framework in Frameworks */,
+				6128452A1936DC81006EC77B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6128451D1936DC81006EC77B = {
+			isa = PBXGroup;
+			children = (
+				612845511936DC81006EC77B /* DomodOfferWall */,
+				612845281936DC81006EC77B /* Frameworks */,
+				612845271936DC81006EC77B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		612845271936DC81006EC77B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				612845261936DC81006EC77B /* libDomodOfferWall.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		612845281936DC81006EC77B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61F04503193DAFDC00F5BCE6 /* MessageUI.framework */,
+				61F04501193DAFA300F5BCE6 /* CoreTelephony.framework */,
+				61F044FF193DABFC00F5BCE6 /* libz.dylib */,
+				61F044FD193DA91C00F5BCE6 /* libsqlite3.0.dylib */,
+				6128456F1936E7D5006EC77B /* StoreKit.framework */,
+				6128456D1936E7C5006EC77B /* AdSupport.framework */,
+				6128456B1936E7B6006EC77B /* libsqlite3.dylib */,
+				612845291936DC81006EC77B /* Foundation.framework */,
+				6128452B1936DC81006EC77B /* CoreFoundation.framework */,
+				6128452D1936DC81006EC77B /* UIKit.framework */,
+				6128452F1936DC81006EC77B /* MobileCoreServices.framework */,
+				612845311936DC81006EC77B /* CoreGraphics.framework */,
+				612845331936DC81006EC77B /* SystemConfiguration.framework */,
+				612845351936DC81006EC77B /* AudioToolbox.framework */,
+				612845371936DC81006EC77B /* CFNetwork.framework */,
+				612845391936DC81006EC77B /* QuartzCore.framework */,
+				6128453B1936DC81006EC77B /* OpenGLES.framework */,
+				6128453D1936DC81006EC77B /* CoreLocation.framework */,
+				6128453F1936DC81006EC77B /* CoreMedia.framework */,
+				612845411936DC81006EC77B /* CoreVideo.framework */,
+				612845431936DC81006EC77B /* AVFoundation.framework */,
+				612845451936DC81006EC77B /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		612845511936DC81006EC77B /* DomodOfferWall */ = {
+			isa = PBXGroup;
+			children = (
+				61284575193711AA006EC77B /* DMTypeConversion.h */,
+				61284576193711AA006EC77B /* DMTypeConversion.m */,
+				612845661936E5CA006EC77B /* Header */,
+				612845681936E5CA006EC77B /* libDMOfferWallSDK.a */,
+				612845541936DC81006EC77B /* DomodOfferWall.h */,
+				612845551936DC81006EC77B /* DomodOfferWall.m */,
+				612845521936DC81006EC77B /* Supporting Files */,
+				612845711936EFA8006EC77B /* DomodExtensionHandler.h */,
+				612845721936EFA8006EC77B /* DomodExtensionHandler.m */,
+			);
+			path = DomodOfferWall;
+			sourceTree = "<group>";
+		};
+		612845521936DC81006EC77B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				612845531936DC81006EC77B /* DomodOfferWall-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		612845661936E5CA006EC77B /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				612845671936E5CA006EC77B /* DMOfferWallManager.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		612845241936DC81006EC77B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				612845691936E5CA006EC77B /* DMOfferWallManager.h in Headers */,
+				612845731936EFA8006EC77B /* DomodExtensionHandler.h in Headers */,
+				61284577193711AA006EC77B /* DMTypeConversion.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		612845251936DC81006EC77B /* DomodOfferWall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6128455D1936DC81006EC77B /* Build configuration list for PBXNativeTarget "DomodOfferWall" */;
+			buildPhases = (
+				612845221936DC81006EC77B /* Sources */,
+				612845231936DC81006EC77B /* Frameworks */,
+				612845241936DC81006EC77B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DomodOfferWall;
+			productName = DomodOfferWall;
+			productReference = 612845261936DC81006EC77B /* libDomodOfferWall.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6128451E1936DC81006EC77B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 612845211936DC81006EC77B /* Build configuration list for PBXProject "DomodOfferWall" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6128451D1936DC81006EC77B;
+			productRefGroup = 612845271936DC81006EC77B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				612845251936DC81006EC77B /* DomodOfferWall */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		612845221936DC81006EC77B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61284578193711AA006EC77B /* DMTypeConversion.m in Sources */,
+				612845741936EFA8006EC77B /* DomodExtensionHandler.m in Sources */,
+				612845561936DC81006EC77B /* DomodOfferWall.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6128455B1936DC81006EC77B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = /Users/czq/Downloads/AIR/AIR_13.0/include/;
+			};
+			name = Debug;
+		};
+		6128455C1936DC81006EC77B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = /Users/czq/Downloads/AIR/AIR_13.0/include/;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6128455E1936DC81006EC77B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DomodOfferWall.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DomodOfferWall/DomodOfferWall-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/czq/Documents/anes/ANE-Domod-OfferWall/ios/DomodOfferWall/DomodOfferWall",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6128455F1936DC81006EC77B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DomodOfferWall.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DomodOfferWall/DomodOfferWall-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/czq/Documents/anes/ANE-Domod-OfferWall/ios/DomodOfferWall/DomodOfferWall",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		612845211936DC81006EC77B /* Build configuration list for PBXProject "DomodOfferWall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6128455B1936DC81006EC77B /* Debug */,
+				6128455C1936DC81006EC77B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6128455D1936DC81006EC77B /* Build configuration list for PBXNativeTarget "DomodOfferWall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6128455E1936DC81006EC77B /* Debug */,
+				6128455F1936DC81006EC77B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6128451E1936DC81006EC77B /* Project object */;
+}

@@ -1,0 +1,92 @@
+<asdoc>
+
+<classRec name='DMOfferWallConsumedStatus' fullname='cn.domod.ane:DMOfferWallConsumedStatus' sourcefile='/Users/czq/Documents/anes/ANE-Domod-OfferWall/actionscript/src/cn/domod/ane/DMOfferWallConsumedStatus.as' namespace='cn.domod.ane' access='public' baseclass='Object' isFinal='false' isDynamic='false' >
+</classRec>
+<method name='DMOfferWallConsumedStatus' fullname='cn.domod.ane:DMOfferWallConsumedStatus/DMOfferWallConsumedStatus' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
+</method>
+<field name='eDMOfferWallConsumeDuplicateOrder' fullname='cn.domod.ane:DMOfferWallConsumedStatus/eDMOfferWallConsumeDuplicateOrder' type='String' isStatic='true' isConst='true' defaultValue='eDMOfferWallConsumeDuplicateOrder' >
+</field>
+<field name='eDMOfferWallConsumeInsufficient' fullname='cn.domod.ane:DMOfferWallConsumedStatus/eDMOfferWallConsumeInsufficient' type='String' isStatic='true' isConst='true' defaultValue='eDMOfferWallConsumeInsufficient' >
+</field>
+<field name='eDMOfferWallConsumeSuccess' fullname='cn.domod.ane:DMOfferWallConsumedStatus/eDMOfferWallConsumeSuccess' type='String' isStatic='true' isConst='true' defaultValue='eDMOfferWallConsumeSuccess' >
+</field>
+<classRec name='DMOfferWallType' fullname='cn.domod.ane:DMOfferWallType' sourcefile='/Users/czq/Documents/anes/ANE-Domod-OfferWall/actionscript/src/cn/domod/ane/DMOfferWallType.as' namespace='cn.domod.ane' access='public' baseclass='Object' isFinal='false' isDynamic='false' >
+</classRec>
+<method name='DMOfferWallType' fullname='cn.domod.ane:DMOfferWallType/DMOfferWallType' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
+</method>
+<field name='eDMOfferWallTypeInterstitial' fullname='cn.domod.ane:DMOfferWallType/eDMOfferWallTypeInterstitial' type='String' isStatic='true' isConst='true' defaultValue='eDMOfferWallTypeInterstitial' >
+</field>
+<field name='eDMOfferWallTypeList' fullname='cn.domod.ane:DMOfferWallType/eDMOfferWallTypeList' type='String' isStatic='true' isConst='true' defaultValue='eDMOfferWallTypeList' >
+</field>
+<field name='eDMOfferWallTypeVideo' fullname='cn.domod.ane:DMOfferWallType/eDMOfferWallTypeVideo' type='String' isStatic='true' isConst='true' defaultValue='eDMOfferWallTypeVideo' >
+</field>
+<classRec name='DMOfferWallEvent' fullname='cn.domod.ane:DMOfferWallEvent' sourcefile='/Users/czq/Documents/anes/ANE-Domod-OfferWall/actionscript/src/cn/domod/ane/DMOfferWallEvent.as' namespace='cn.domod.ane' access='public' baseclass='Object' isFinal='false' isDynamic='false' >
+</classRec>
+<method name='DMOfferWallEvent' fullname='cn.domod.ane:DMOfferWallEvent/DMOfferWallEvent' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
+</method>
+<field name='DMOfferWallConsumeDuplicateOrder' fullname='cn.domod.ane:DMOfferWallEvent/DMOfferWallConsumeDuplicateOrder' type='String' isStatic='true' isConst='true' defaultValue='eDMOfferWallConsumeDuplicateOrder' >
+</field>
+<field name='DMOfferWallConsumeInsufficient' fullname='cn.domod.ane:DMOfferWallEvent/DMOfferWallConsumeInsufficient' type='String' isStatic='true' isConst='true' defaultValue='eDMOfferWallConsumeInsufficient' >
+</field>
+<field name='DMOfferWallConsumeSuccess' fullname='cn.domod.ane:DMOfferWallEvent/DMOfferWallConsumeSuccess' type='String' isStatic='true' isConst='true' defaultValue='eDMOfferWallConsumeSuccess' >
+</field>
+<field name='DM_TOTALPOINT_RECEIVED' fullname='cn.domod.ane:DMOfferWallEvent/DM_TOTALPOINT_RECEIVED' type='String' isStatic='true' isConst='true' defaultValue='receivedTotalPoint' >
+</field>
+<field name='DM_WALL_LOADED' fullname='cn.domod.ane:DMOfferWallEvent/DM_WALL_LOADED' type='String' isStatic='true' isConst='true' defaultValue='dmOfferWallManagerDidFinishLoad' >
+</field>
+<field name='didCheckEnableStatus' fullname='cn.domod.ane:DMOfferWallEvent/didCheckEnableStatus' type='String' isStatic='true' isConst='true' defaultValue='didCheckEnableStatus' >
+</field>
+<classRec name='DMOfferWallExtension' fullname='cn.domod.ane:DMOfferWallExtension' sourcefile='/Users/czq/Documents/anes/ANE-Domod-OfferWall/actionscript/src/cn/domod/ane/DMOfferWallExtension.as' namespace='cn.domod.ane' access='public' baseclass='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+	 多盟积分墙
+	 请加入以下东东
+	 <uses-permission android:name="android.permission.INTERNET"/><uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> <uses-permission android:name="android.permission.READ_PHONE_STATE"/> <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/> <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/> <activity android:name="cn.domob.download.OActivity”/>
+	 
+	 ]]></description>
+<author><![CDATA[czq
+	 
+	 ]]></author>
+</classRec>
+<method name='DMConsume' fullname='cn.domod.ane:DMOfferWallExtension/DMConsume' isStatic='true' isFinal='false' isOverride='false'  param_names='point' param_types='String' param_defaults='undefined' result_type='void'>
+</method>
+<method name='DMInit' fullname='cn.domod.ane:DMOfferWallExtension/DMInit' isStatic='true' isFinal='false' isOverride='false'  param_names='publisherId' param_types='String' param_defaults='undefined' result_type='void'>
+</method>
+<method name='DMLoadInterstitialOfferWall' fullname='cn.domod.ane:DMOfferWallExtension/DMLoadInterstitialOfferWall' isStatic='true' isFinal='false' isOverride='false'  result_type='void'>
+</method>
+<method name='DMOfferWallExtension' fullname='cn.domod.ane:DMOfferWallExtension/DMOfferWallExtension' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
+</method>
+<method name='DMShowInterstitialOfferWall' fullname='cn.domod.ane:DMOfferWallExtension/DMShowInterstitialOfferWall' isStatic='true' isFinal='false' isOverride='false'  result_type='void'>
+</method>
+<method name='DMShowOfferWall' fullname='cn.domod.ane:DMOfferWallExtension/DMShowOfferWall' isStatic='true' isFinal='false' isOverride='false'  result_type='void'>
+</method>
+<method name='DMShowVideoOfferWall' fullname='cn.domod.ane:DMOfferWallExtension/DMShowVideoOfferWall' isStatic='true' isFinal='false' isOverride='false'  result_type='void'>
+</method>
+<method name='DMcheckSocre' fullname='cn.domod.ane:DMOfferWallExtension/DMcheckSocre' isStatic='true' isFinal='false' isOverride='false'  result_type='void'>
+</method>
+<method name='DMcheckStatus' fullname='cn.domod.ane:DMOfferWallExtension/DMcheckStatus' isStatic='true' isFinal='false' isOverride='false'  result_type='void'>
+</method>
+<method name='getInstance' fullname='cn.domod.ane:DMOfferWallExtension/getInstance' isStatic='true' isFinal='false' isOverride='false'  result_type='cn.domod.ane:DMOfferWallExtension'>
+</method>
+<field name='DMCHECKSOCRE' fullname='cn.domod.ane:DMOfferWallExtension/private:DMCHECKSOCRE' type='String' isStatic='true' isConst='true' defaultValue='DMcheckSocre' >
+</field>
+<field name='DMCHECKSTATUS' fullname='cn.domod.ane:DMOfferWallExtension/private:DMCHECKSTATUS' type='String' isStatic='true' isConst='true' defaultValue='DMcheckStatus' >
+</field>
+<field name='DMCONSUME' fullname='cn.domod.ane:DMOfferWallExtension/private:DMCONSUME' type='String' isStatic='true' isConst='true' defaultValue='DMConsume' >
+</field>
+<field name='DMINIT' fullname='cn.domod.ane:DMOfferWallExtension/private:DMINIT' type='String' isStatic='true' isConst='true' defaultValue='DMInit' >
+</field>
+<field name='DMLOADINTERSTITIALOFFERWALL' fullname='cn.domod.ane:DMOfferWallExtension/private:DMLOADINTERSTITIALOFFERWALL' type='String' isStatic='true' isConst='true' defaultValue='DMLoadInterstitialOfferWall' >
+</field>
+<field name='DMSHOWINTERSTITIALOFFERWALL' fullname='cn.domod.ane:DMOfferWallExtension/private:DMSHOWINTERSTITIALOFFERWALL' type='String' isStatic='true' isConst='true' defaultValue='DMShowInterstitialOfferWall' >
+</field>
+<field name='DMSHOWOFFERWALL' fullname='cn.domod.ane:DMOfferWallExtension/private:DMSHOWOFFERWALL' type='String' isStatic='true' isConst='true' defaultValue='DMShowOfferWall' >
+</field>
+<field name='DMSHOWVIDEOOFFERWALL' fullname='cn.domod.ane:DMOfferWallExtension/private:DMSHOWVIDEOOFFERWALL' type='String' isStatic='true' isConst='true' defaultValue='DMShowVideoOfferWall' >
+</field>
+<field name='EXTENSION_ID' fullname='cn.domod.ane:DMOfferWallExtension/private:EXTENSION_ID' type='String' isStatic='true' isConst='false' defaultValue='cn.domod.dmofferwall.extension' >
+</field>
+<field name='_extContext' fullname='cn.domod.ane:DMOfferWallExtension/private:_extContext' type='flash.external:ExtensionContext' isStatic='true' isConst='false' >
+</field>
+<field name='_instance' fullname='cn.domod.ane:DMOfferWallExtension/private:_instance' type='cn.domod.ane:DMOfferWallExtension' isStatic='true' isConst='false' >
+</field>
+</asdoc>

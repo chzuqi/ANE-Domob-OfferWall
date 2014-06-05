@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
+  <includeClasses>
+    <classEntry path="com.czqsoft.anes.WeixinSdk"/>
+    <classEntry path="cn.domod.ane.DMOfferWallEvent"/>
+    <classEntry path="cn.domod.ane.DMOfferWallType"/>
+    <classEntry path="cn.domod.ane.DMOfferWallConsumedStatus"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>

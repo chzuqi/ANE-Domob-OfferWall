@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fxpProperties abbreviated="false" authoringTool="Flex Builder" compiles="true" parentProject="abaac2a3-4470-4ea6-84eb-f1bae70bef2d" projectUUID="abaac2a3-4470-4ea6-84eb-f1bae70bef2d" pureCatalystProject="false" sdkVersion="4.11.0" uuid="66af036d-1efa-42a9-9459-f7dab7ff62e9" version="15">
+  <projects/>
+  <src/>
+  <swc>
+    <linked location="sdkPlaceHolder" path="sdkPlaceHolder" position="0" uuid="66af036d-1efa-42a9-9459-f7dab7ff62e9"/>
+    <linked location="D:/SVN/client/starling/CCGame/package_xiaomi/xiaomi/DMOfferWallTest/libs" path="/libs" position="1" uuid="66af036d-1efa-42a9-9459-f7dab7ff62e9"/>
+    <linked location="D:/SVN/client/starling/CCGame/package_xiaomi/xiaomi/DMOfferWallTest/libs/DomodOfferWall.ane" path="/libs/DomodOfferWall.ane" position="2" uuid="66af036d-1efa-42a9-9459-f7dab7ff62e9"/>
+  </swc>
+  <misc/>
+  <theme/>
+  <mxmlFormattingPrefs groupAttributesByState="true" maxLineWidth="100" mxmlAlignAttributes="true" mxmlAttributeOrder="id,userLabel,includeIn,excludeFrom,visible,x,y,z,left,right,top,bottom,width,height,minWidth,minHeight,maxWidth,maxHeight,label" mxmlKeepAttributeValuesOrganized="true"/>
+</fxpProperties>

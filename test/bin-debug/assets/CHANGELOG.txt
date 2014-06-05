@@ -1,0 +1,7 @@
+Android OfferWall template change log
+
+== 1 ==
+ * date: 2013-08-15
+ * revision: 47098
+ * changes:
+    init version

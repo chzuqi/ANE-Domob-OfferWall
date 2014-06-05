@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>81300143-D323-48DF-9D6D-3E568986A7E8</string>
+	<string>912FCFB1-8C93-4E4E-BBAE-898621CD7F41</string>
 	<key>IDESourceControlProjectName</key>
 	<string>DomodOfferWall</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>809EEF0A-C7D0-4C8E-AFC6-BF7B23283427</key>
-		<string>https://github.com/chzuqi/ANE-UMeng-Feedback.git</string>
+		<key>E5E20582-F1F2-4F2E-AC0F-1BDC66FFF95D</key>
+		<string>https://github.com/chzuqi/ANE-Domob-OfferWall.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>ios/DomodOfferWall/DomodOfferWall.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>809EEF0A-C7D0-4C8E-AFC6-BF7B23283427</key>
+		<key>E5E20582-F1F2-4F2E-AC0F-1BDC66FFF95D</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/chzuqi/ANE-UMeng-Feedback.git</string>
+	<string>https://github.com/chzuqi/ANE-Domob-OfferWall.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>809EEF0A-C7D0-4C8E-AFC6-BF7B23283427</string>
+	<string>E5E20582-F1F2-4F2E-AC0F-1BDC66FFF95D</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>809EEF0A-C7D0-4C8E-AFC6-BF7B23283427</string>
+			<string>E5E20582-F1F2-4F2E-AC0F-1BDC66FFF95D</string>
 			<key>IDESourceControlWCCName</key>
-			<string>ANE-Domod-OfferWall</string>
+			<string>ANE-Domob-OfferWall</string>
 		</dict>
 	</array>
 </dict>

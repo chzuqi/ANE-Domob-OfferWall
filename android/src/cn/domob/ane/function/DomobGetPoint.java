@@ -1,6 +1,7 @@
 package cn.domob.ane.function;
 
-import android.annotation.SuppressLint;
+import java.util.Locale;
+
 import cn.domob.data.OErrorInfo;
 import cn.domob.data.OManager;
 
@@ -20,12 +21,12 @@ public class DomobGetPoint implements FREFunction {
 			@Override
 			public void onCheckPointsSucess(final int point,
 					final int consumed) {
-//				NSString *result = [NSString stringWithFormat:@"{'totalPoint:'%d,'consumedPoint':%d}", [totalPoint integerValue], [consumedPoint integerValue]];
-//			    DISPATCH_STATUS_EVENT(self.context, [@"receivedTotalPoint" UTF8String], [result UTF8String]);
-				String result = String.format("{'totalPoint:'%d,'consumedPoint':%d}", point, consumed);
+				Object[] data = new Object[2];
+				data[0] = point;
+				data[1] = consumed;
+				String jsonFormat = "{'totalPoint:'%d,'consumedPoint':%d}";
+				String result = String.format(Locale.getDefault(), jsonFormat , data);
 				NativeExtensionShared.event("receivedTotalPoint", result);
-//				showToast("总积分：" + point + "总消费积分：" + consumed);
-//				showText("总积分：" + point + "总消费积分：" + consumed);
 			}
 
 			@Override
@@ -35,6 +36,7 @@ public class DomobGetPoint implements FREFunction {
 			}
 		});
 		NativeExtensionShared.sManager.checkPoints();
+		NativeExtensionShared.event(TAG, "start check point");
 		return null;
 	}
 

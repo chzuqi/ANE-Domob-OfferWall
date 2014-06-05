@@ -67,7 +67,7 @@
 	</fx:Declarations>
 	<s:Button x="16" y="29" width="125" label="init" click="button1_clickHandler(event)"/>
 	<s:TextInput id="pid" x="168" y="29" width="285" height="65" prompt="publisherid"
-				 text="56OJwSKouNHR7PMnaj"/>
+				 text="96ZJ3ofAzeFJjwTBiP"/>
 	<s:Button x="16" y="111" width="145" height="53" label="consume"
 			  click="button2_clickHandler(event)"/>
 	<s:TextInput id="txtpoint" x="168" y="113" width="285" prompt="point"/>

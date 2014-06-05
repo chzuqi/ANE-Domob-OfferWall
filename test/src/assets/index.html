@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>多盟-推广墙</title>
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width,user-scalable=no" />
+<link href="css/style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div id="page" class="withPadding">
+	<header class="header">
+		<span class="bg btn_back ac_quit">返回</span>
+		<h1>免费获得<em class="unit">积分</em></h1>
+		<span class="bg logo">多盟</span>
+	</header>
+	<div id="game_scroller" class="list_body">
+		<div class="lists">
+			<div id="open_wrapper" class="hidden">
+				<!-- <h3 class="action_sort">签到</h3> -->
+				<ul id="openlist" class="games"></ul>
+			</div>
+			<ul id="gamelist" class="games">
+				<li><div id="msgs" class="loading"></div></li>
+				<!-- 
+				<li class="ac_do_action" srv="11100">
+					<div class="game_banner">
+						<a href="javascript:void(0)" class="link_detail">
+							<span class="bg new">new</span>
+							<img class="game_icon" alt="武侠" src="http://s.g.domob.cn/g/res/i/7680/0/38a12124fd9752a07f36408d89d2ef13">	
+						</a>
+						<h4 class="game_name"><a href="javascript:void(0)">武侠</a></h4>
+						<p class="todo">首次下载并<em class="red">注册</em>获得奖励！</p>
+					</div>
+					<div class="download_info">
+						<p>50000积分</p>
+						<a class="bg icon_go link_go" href="javascript:void(0);">注册</a>
+					</div>
+				</li>
+				-->
+			</ul>
+			<div id="video_wrapper" class="hidden">
+				<h3 class="action_sort">看视频，得<em class="unit">积分</em></h3>
+				<ul id="videolist" class="games">
+					<li srv="video" class="ac_do_action"><div class="game_banner"><span class="link_detail"><em class="game_icon"></em></span><h4 class="game_name">看视频，即可获<em class="unit">积分</em></h4></div><div class="download_info"><span class="bg icon_go link_go" srv="domob://video/">观看</span></div></li>
+				</ul>
+			</div>
+			<div id="done_wrapper" class="hidden">
+				<h3 class="action_sort">已完成</h3>
+				<ul id="donelist" class="games"></ul>
+			</div>
+			<footer class="footer">
+				<span href="javascript:void(0);" class="bg domob_logo">DOMOB 多盟</span>
+				<span id="btn_repo" href="javascript:void(0);" class="bg icon icon_contact">意见反馈</span>
+				<span id="btn_help" href="javascript:void(0);" class="bg icon icon_info">帮助信息</span>
+			</footer>
+		</div>
+	</div>
+	<div id="detail" class="box">
+		<header class="header">
+			<span class="bg btn_back ac_back2list">返回</span>
+			<h1>应用详情</h1>
+		</header>
+		<div id="detail_scroller" class="detail_padder">
+			<div class="detail_body">
+				<!-- 
+				<div class="game">
+					<div class="game_banner">
+						<a href="javascript:void(0)" class="link_detail">
+							<img class="game_icon" alt="武侠" src="http://s.g.domob.cn/g/res/i/7680/0/38a12124fd9752a07f36408d89d2ef13">	
+						</a>
+						<h4 class="game_name">武侠</h4>
+						<span class="todo">版本：<em>2.3.1</em>  大小：<em>231MB</em></span>
+					</div>
+					<div class="download_info">
+						<a class="bg icon_go link_go" href="javascript:void(0);">打开</a>
+					</div>
+				</div>
+				<div class="offer">
+					<h4>25000积分</h4>
+					<div class="offer_content">
+						1.首次安装下载应用<br>
+					2.注册帐户<br>
+					完成上述步骤，半小时内获得积分
+					</div>
+				</div>
+				<div class="screenshots">
+					<ul>
+						<li><img alt="" src="http://s.g.domob.cn/g/res/s/7680/0/741aca9b8910162bab2f41fad1f02a8e"></li>
+						<li><img alt="" src="http://s.g.domob.cn/g/res/s/7680/1/6d20b047b7f004f1c943ba2ba91ca02b"></li>
+						<li><img alt="" src="http://s.g.domob.cn/g/res/s/7680/2/c29835e42ad965a15cee6784b4accb88"></li>
+						<li><img alt="" src="http://s.g.domob.cn/g/res/s/7680/3/e514561cfb06e452e9135bfc78df73cb"></li>
+						<li><img alt="" src="http://s.g.domob.cn/g/res/s/7680/4/3d0c759293df8382d1865c6fc39795a3"></li>
+					</ul>
+				</div>
+				<div class="description">
+					<h2 name="description_title" id="description_title">简介</h2>
+					<div id="description_content" class="content">
+						帮会混战震撼出炉！体验淋漓战斗快感！<br>
+						全新修仙果园功能！感受飘逸养生乐趣！<br>
+						<br>
+						掌上江湖，只在《武侠OL》！<br>
+						持倚天屠龙，携美艳小昭，与南帝北丐同行，乱斗之势一触即发！称霸江湖，武林掌门，梦圆武侠！<br>
+						<br>
+						【游戏特色】<br>
+						浪漫果园，感受休闲养生乐趣！<br>
+						帮会混战，体验淋漓战斗快感！<br>
+						挑战宗师，成就一代武侠!<br>
+						多人战役，群战八方侠客!<br>
+						华山论剑，体会武侠豪情!<br>
+						万人在线，谁能独步武林!		
+					</div>
+				</div>
+				-->
+			</div>
+		</div>
+		<footer class="action">
+			<a href="###" class="bg btn_action">立即获得奖励</a>
+		</footer>
+	</div>
+	<div id="repo" class="box">
+		<header class="header">
+			<span class="bg btn_back ac_back2list">返回</span>
+			<h1>没有获得奖励？</h1>
+			<span class="bg logo">多盟</span>
+		</header>
+		<div class="repo_wrapper">
+			<p class="info">如果您已下载、安装并激活应用，指定时间后仍未获得积分，请填写以下信息，我们会尽快为您解决问题。</p>
+			<form action="domob://appealinfo/">
+				<input type="hidden" name="name" id="repo_app_pkg">
+				<p>
+					<label class="select">
+						<select name="id" id="select_repo_app">
+							<option value="" disabled>下载安装的应用名称</option>
+						</select>		
+					</label>
+				</p>
+				<p><label><input id="repo_email" type="email" name="email" placeholder="您的邮箱"/></label></p>
+
+				<div class="sdk_info">
+					<p><dfn>当前版本</dfn> v<span id="sdk_version">1.0.1</span></p>
+					<p><dfn>当前设备号</dfn> <span id="device_id">00A4D647-AB08-44DC-B3E5-6067E150B63F</span></p>
+				</div>
+
+				<p class="actions">
+					<button class="btn_submit" type="submit"><span>提交</span></button>
+				</p>
+			</form>
+		</div>
+	</div>
+	<div id="help" class="box">
+		<header class="header">
+			<span class="bg btn_back ac_back2list">返回</span>
+			<h1><em class="unit">积分</em>获取说明</h1>
+			<span class="bg logo">多盟</span>
+		</header>
+		<div id="help_scroller" class="help_wrapper">
+			<dl class="help_body">
+				<dt>1. 如何免费获取<em class="unit">积分</em>？</dt>
+				<dd>用户按照广告要求说明，通过下载、安装、打开应用三个必要步骤来获取<em class="unit">积分</em>。对于部分广告，请按照提示，打开应用后进行注册才能获取免费<em class="unit">积分</em>奖励。</dd>
+				<dt>2. 多长时间返回<em class="unit">积分</em>？</dt>
+				<dd>广告安装打开后，系统需要一定时间来返还<em class="unit">积分</em>，一般返还的时间很快，在五分钟以内，请耐心等待。用户可以下拉刷新<em class="unit">积分</em>墙，重新检查是否已获得<em class="unit">积分</em>。</dd>
+				<dt>3. 打开广告后不返回<em class="unit">积分</em>？</dt>
+				<dd>请确保您的网络连接正常；您可以查看是否按照广告要求的流程进行操作，广告须在打开或者注册后才生效。如操作流程正确但仍未能获取<em class="unit">积分</em>，您可以进行反馈，我们将及时进行处理。</dd>
+				<dt>4. 如何进行反馈？</dt>
+				<dd>安装打开广告后却未返还<em class="unit">积分</em>的，您可以点击<em class="unit">积分</em>墙的底部的反馈按钮，在反馈页面选择您没有获得<em class="unit">积分</em>的广告，并填写联系邮箱。对于您使用过程中可能出现的问题，我们表示十分遗憾；同时，我们也将对您的反馈及时进行处理。</dd>
+				<dd>感谢您对多盟广告的大力支持，我们将一直致力于给您提供更好的服务！</dd>
+			</dl>
+		</div>
+	</div>
+</div>
+
+	<!-- <a id="more_games" href="javascript:void(0)">查看更多…</a> -->
+	<script type="text/javascript" src='js/jquery.js'></script>
+	<script type="text/javascript" src='js/iscroll-lite.js'></script>
+	<script type="text/javascript" src='js/index.js'></script>
+</body>
+</html>

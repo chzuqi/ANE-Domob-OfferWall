@@ -1,4 +1,4 @@
-<extension xmlns="http://ns.adobe.com/air/extension/3.9">
+<extension xmlns="http://ns.adobe.com/air/extension/13.0">
   <id>cn.domod.dmofferwall.extension</id>
   <versionNumber>1</versionNumber>
   <platforms>
@@ -19,11 +19,11 @@
 
     <!--<platform name="Android-ARM">
         <applicationDeployment> 
-            <nativeLibrary>libUMFeedback.jar</nativeLibrary>
-            <initializer>com.czqsoft.ane.UMFeedbackExtension</initializer>
-            <finalizer>com.czqsoft.ane.UMFeedbackExtension</finalizer>
+            <nativeLibrary>libDomodOfferWall.jar</nativeLibrary>
+            <initializer>cn.domob.ane.DomobExtension</initializer>
+            <finalizer>cn.domob.ane.DomobExtension</finalizer>
         </applicationDeployment> 
-    </platform> -->
+    </platform>-->
     
     <platform name="default"> 
         <applicationDeployment/> 

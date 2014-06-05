@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6100C75919405E2A00BC4970 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6100C75819405E2A00BC4970 /* CoreData.framework */; };
 		6128452A1936DC81006EC77B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 612845291936DC81006EC77B /* Foundation.framework */; };
 		6128452E1936DC81006EC77B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6128452D1936DC81006EC77B /* UIKit.framework */; };
 		612845321936DC81006EC77B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 612845311936DC81006EC77B /* CoreGraphics.framework */; };
@@ -17,7 +18,7 @@
 		612845561936DC81006EC77B /* DomodOfferWall.m in Sources */ = {isa = PBXBuildFile; fileRef = 612845551936DC81006EC77B /* DomodOfferWall.m */; };
 		612845691936E5CA006EC77B /* DMOfferWallManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 612845671936E5CA006EC77B /* DMOfferWallManager.h */; };
 		6128456A1936E5CA006EC77B /* libDMOfferWallSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 612845681936E5CA006EC77B /* libDMOfferWallSDK.a */; };
-		6128456E1936E7C5006EC77B /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6128456D1936E7C5006EC77B /* AdSupport.framework */; };
+		6128456E1936E7C5006EC77B /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6128456D1936E7C5006EC77B /* AdSupport.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		612845701936E7D5006EC77B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6128456F1936E7D5006EC77B /* StoreKit.framework */; };
 		612845731936EFA8006EC77B /* DomodExtensionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 612845711936EFA8006EC77B /* DomodExtensionHandler.h */; };
 		612845741936EFA8006EC77B /* DomodExtensionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 612845721936EFA8006EC77B /* DomodExtensionHandler.m */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6100C75819405E2A00BC4970 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		612845261936DC81006EC77B /* libDomodOfferWall.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDomodOfferWall.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		612845291936DC81006EC77B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6128452B1936DC81006EC77B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -68,6 +70,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				61F04502193DAFA300F5BCE6 /* CoreTelephony.framework in Frameworks */,
+				6100C75919405E2A00BC4970 /* CoreData.framework in Frameworks */,
 				61F04504193DAFDC00F5BCE6 /* MessageUI.framework in Frameworks */,
 				6128456E1936E7C5006EC77B /* AdSupport.framework in Frameworks */,
 				612845401936DC81006EC77B /* CoreMedia.framework in Frameworks */,
@@ -105,6 +108,7 @@
 		612845281936DC81006EC77B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6100C75819405E2A00BC4970 /* CoreData.framework */,
 				61F04503193DAFDC00F5BCE6 /* MessageUI.framework */,
 				61F04501193DAFA300F5BCE6 /* CoreTelephony.framework */,
 				61F044FF193DABFC00F5BCE6 /* libz.dylib */,
@@ -293,7 +297,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/czq/Documents/anes/ANE-Domod-OfferWall/ios/DomodOfferWall/DomodOfferWall",
+					"/Users/czq/Documents/anes/ANE-Domob-OfferWall/ios/DomodOfferWall/DomodOfferWall",
 				);
 				MACH_O_TYPE = staticlib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -310,7 +314,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/czq/Documents/anes/ANE-Domod-OfferWall/ios/DomodOfferWall/DomodOfferWall",
+					"/Users/czq/Documents/anes/ANE-Domob-OfferWall/ios/DomodOfferWall/DomodOfferWall",
 				);
 				MACH_O_TYPE = staticlib;
 				PRODUCT_NAME = "$(TARGET_NAME)";

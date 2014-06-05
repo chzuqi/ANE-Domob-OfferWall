@@ -5,8 +5,8 @@
     <property file="build.properties"/>
 
     <!-- All -->
-    <!-- <target name="all" depends="android,ios,ios-simulator,swc-mobile,swc-default,package" description="Full build of extension"/> -->
-    <target name="all" depends="ios,ios-simulator,swc-mobile,package,asdoc" description="Full build of extension"/>
+    <target name="all" depends="ios,ios-simulator,swc-mobile,package" description="Full build of extension"/>
+    <!--<target name="all" depends="ios,ios-simulator,swc-mobile,package,asdoc" description="Full build of extension"/>-->
     <!-- <target name="all" depends="ios,ios-simulator,android,swc-mobile,package,asdoc" description="Full build of extension"/> -->
     <!-- <target name="all" depends="android" description="Full build of extension"/> -->
 
@@ -61,13 +61,17 @@
         <copy todir="../temp/ios/DomobOfferWallBundle.bundle">
             <fileset dir="../ios/DomobOfferWallBundle.bundle"/>
         </copy>
+        
+        <copy todir="../temp/ios-simulator/DomobOfferWallBundle.bundle">
+            <fileset dir="../ios/DomobOfferWallBundle.bundle"/>
+        </copy>
 
         <delete dir="../temp/ios-simulator/build/"/>
         <delete dir="../ios/${name}/build/"/>
     </target>
 
-    <!-- Android not now -->
-    <!--<target name="android" description="Build Android Library">
+    <!-- Android -->
+    <target name="android" description="Build Android Library">
         <delete dir="../android/temp"/>
         <mkdir dir="../android/temp/classes"/>
 
@@ -85,16 +89,14 @@
         <mkdir dir="../android/temp/zip"/>
         <copydir src="../android/temp/zip" dest="../android/temp/classes"/>
 
-        <unzip src="../android/libs/${android.extlibname}" dest="../android/temp/zip"/>
-        <copydir src="../android/temp/zip/com" dest="../android/temp/classes/com"/>
-
         <mkdir dir="../temp/android/"/>
         <jar basedir="../android/temp/classes" destfile="../temp/android/lib${name}.jar"/>
-        <copy todir="../temp/android/res/">
+        <copy file="../android/libs/${android.extlibname}" todir="../temp/android/" overwrite="true"/>
+        <!--<copy todir="../temp/android/res/">
             <fileset dir="../android/res/"/>
-        </copy>
+        </copy>-->
         <delete dir="../android/temp"/>
-    </target>-->
+    </target>
 
     <!-- Actionscript mobile -->
     <target name="swc-mobile" description="Build SWC library">
@@ -123,10 +125,11 @@
         <copy file="../temp/swc/content/library.swf" todir="../temp/ios-simulator" overwrite="true"/>
         <copy file="../temp/swc/content/library.swf" todir="../temp/default" overwrite="true"/>
         <!--<copy file="../temp/swc/content/library.swf" todir="../temp/android" overwrite="true"/>-->
-        <!-- <delete dir="../temp/swc/content/"/> -->
+        <delete dir="../temp/swc/content/"/>
     </target>
 
     <!-- Actionscript default (for AIR simulator) -->
+    <!-- 现在已经写一个swc两个一起用了，请在函数调用前加上if (extension) -->
     <!--<target name="swc-default" description="Build SWC library">
         <mkdir dir="../temp/swc/content/"/>
 
@@ -176,7 +179,7 @@
             <arg line="-swc swc/${name}.swc"/>
             <arg line="-platform iPhone-ARM -platformoptions ../build/platform.xml -C ios/ ."/>
             <arg line="-platform iPhone-x86 -C ios-simulator/ ."/>
-            <!--<arg line="-platform Android-ARM -C android/ ."/>-->
+            <!--<arg line="-platform Android-ARM -platformoptions ../build/platform-android.xml -C android/ ."/>-->
             <arg line="-platform default -C default/ ."/>
         </exec>
 
@@ -195,14 +198,14 @@
     <!-- generate documentation -->
     <!-- this target is not part of the normal compile time, it will generate html asdoc for documentation purposes -->
     <target name="asdoc" description="generate the asdoc in readable html">
-        <!--<exec executable="${FLEX_HOME}/bin/asdoc${bin.ext}" failonerror="true">
+        <exec executable="${FLEX_HOME}/bin/asdoc${bin.ext}" failonerror="true">
             <env key="FLEX_HOME" value="${FLEX_HOME}"/>
             <env key="FALCON_HOME" value="${FLEX_HOME}"/>
             <arg line='-source-path ../actionscript/src'/>
             <arg line='-doc-sources ../actionscript/src'/>
             <arg line='-output ../docs'/>
             <arg line='-library-path+="${FLEX_HOME}/frameworks/libs/air/airglobal.swc"'/>
-        </exec>-->
+        </exec>
     </target>
 
 </project>

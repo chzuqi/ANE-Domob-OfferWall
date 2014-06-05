@@ -172,11 +172,11 @@
 //            [self.view makeToast:@"消费成功！"];
             break;
         case eDMOfferWallConsumeInsufficient:
-            DISPATCH_STATUS_EVENT(self.context, [@"eDMOfferWallConsumeInsufficient" UTF8String], [result UTF8String]);
+            DISPATCH_STATUS_EVENT(self.context, [@"eDMOfferWallConsumeFail" UTF8String], [@"eDMOfferWallConsumeInsufficient" UTF8String]);
 //            [self.view makeToast:@"消费失败，余额不足！"];
             break;
         case eDMOfferWallConsumeDuplicateOrder:
-             DISPATCH_STATUS_EVENT(self.context, [@"eDMOfferWallConsumeDuplicateOrder" UTF8String], [result UTF8String]);
+             DISPATCH_STATUS_EVENT(self.context, [@"eDMOfferWallConsumeFail" UTF8String], [@"eDMOfferWallConsumeDuplicateOrder" UTF8String]);
 //            [self.view makeToast:@"订单重复！"];
             break;
         default:
@@ -190,7 +190,8 @@
 //  消费请求异常应答后，回调该接口，并返回异常的错误原因。
 - (void)dmOfferWallManager:(DMOfferWallManager *)manager
     failedConsumeWithError:(NSError *)error {
-    
+    NSString *errorString = [error localizedDescription];
+    DISPATCH_STATUS_EVENT(self.context, [@"eDMOfferWallConsumeFail" UTF8String], [errorString UTF8String]);
     NSLog(@"<demo>dmOfferWallManager:failedConsumeWithError:%@", error);
 }
 

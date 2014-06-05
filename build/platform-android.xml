@@ -1,0 +1,8 @@
+<platform xmlns="http://ns.adobe.com/air/extension/13.0">
+	<description>hello world</description>
+	<copyright>2013 czqsoft</copyright>
+	<packagedDependencies>
+		<packagedDependency>domob_android_offer_wall_sdk.jar</packagedDependency>
+		<!--<packagedDependency>android-support-v4.jar</packagedDependency>-->
+	</packagedDependencies>
+</platform>

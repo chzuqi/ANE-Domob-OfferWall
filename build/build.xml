@@ -190,7 +190,7 @@
                 <exclude name="overviews.xml"/>
             </zipfileset>
         </zip> -->
-
+        <copy file="../temp/${name}.ane" todir="../test/libs" overwrite="true"/>
         <move file="../temp/${name}.ane" todir="../bin"/>
         <delete dir="../temp"/>
     </target>

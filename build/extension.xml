@@ -1,4 +1,4 @@
-<extension xmlns="http://ns.adobe.com/air/extension/13.0">
+<extension xmlns="http://ns.adobe.com/air/extension/4.0">
   <id>cn.domod.dmofferwall.extension</id>
   <versionNumber>1</versionNumber>
   <platforms>

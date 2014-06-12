@@ -50,7 +50,7 @@
 		612845541936DC81006EC77B /* DomodOfferWall.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DomodOfferWall.h; sourceTree = "<group>"; };
 		612845551936DC81006EC77B /* DomodOfferWall.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DomodOfferWall.m; sourceTree = "<group>"; };
 		612845671936E5CA006EC77B /* DMOfferWallManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMOfferWallManager.h; sourceTree = "<group>"; };
-		612845681936E5CA006EC77B /* libDMOfferWallSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libDMOfferWallSDK.a; sourceTree = "<group>"; };
+		612845681936E5CA006EC77B /* libDMOfferWallSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libDMOfferWallSDK.a; path = ../libDMOfferWallSDK.a; sourceTree = "<group>"; };
 		6128456B1936E7B6006EC77B /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		6128456D1936E7C5006EC77B /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		6128456F1936E7D5006EC77B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -138,15 +138,14 @@
 		612845511936DC81006EC77B /* DomodOfferWall */ = {
 			isa = PBXGroup;
 			children = (
+				612845521936DC81006EC77B /* Supporting Files */,
+				612845661936E5CA006EC77B /* Header */,
 				61284575193711AA006EC77B /* DMTypeConversion.h */,
 				61284576193711AA006EC77B /* DMTypeConversion.m */,
-				612845661936E5CA006EC77B /* Header */,
-				612845681936E5CA006EC77B /* libDMOfferWallSDK.a */,
-				612845541936DC81006EC77B /* DomodOfferWall.h */,
-				612845551936DC81006EC77B /* DomodOfferWall.m */,
-				612845521936DC81006EC77B /* Supporting Files */,
 				612845711936EFA8006EC77B /* DomodExtensionHandler.h */,
 				612845721936EFA8006EC77B /* DomodExtensionHandler.m */,
+				612845541936DC81006EC77B /* DomodOfferWall.h */,
+				612845551936DC81006EC77B /* DomodOfferWall.m */,
 			);
 			path = DomodOfferWall;
 			sourceTree = "<group>";
@@ -162,6 +161,7 @@
 		612845661936E5CA006EC77B /* Header */ = {
 			isa = PBXGroup;
 			children = (
+				612845681936E5CA006EC77B /* libDMOfferWallSDK.a */,
 				612845671936E5CA006EC77B /* DMOfferWallManager.h */,
 			);
 			path = Header;

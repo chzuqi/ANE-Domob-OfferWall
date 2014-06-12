@@ -163,7 +163,7 @@
                 totalPoint:(NSNumber *)totalPoint
         totalConsumedPoint:(NSNumber *)consumedPoint {
     
-    NSString *result = [NSString stringWithFormat:@"{'totalPoint:'%ld,'consumedPoint':%ld}", (long)[totalPoint integerValue], (long)[consumedPoint integerValue]];
+    NSString *result = [NSString stringWithFormat:@"{\"totalPoint\":%ld,\"consumedPoint\":%ld}", (long)[totalPoint integerValue], (long)[consumedPoint integerValue]];
 
     
     switch (statusCode) {

@@ -144,7 +144,7 @@
 - (void)dmOfferWallManager:(DMOfferWallManager *)manager
         receivedTotalPoint:(NSNumber *)totalPoint
         totalConsumedPoint:(NSNumber *)consumedPoint {
-    NSString *result = [NSString stringWithFormat:@"{'totalPoint:'%ld,'consumedPoint':%ld}", (long)[totalPoint integerValue], (long)[consumedPoint integerValue]];
+    NSString *result = [NSString stringWithFormat:@"{\"totalPoint\":%ld,\"consumedPoint\":%ld}", (long)[totalPoint integerValue], (long)[consumedPoint integerValue]];
     DISPATCH_STATUS_EVENT(self.context, [@"receivedTotalPoint" UTF8String], [result UTF8String]);
 //    _pointLabel.text = [NSString stringWithFormat:@"%d", [totalPoint integerValue]];
 //    _consumeLabel.text = [NSString stringWithFormat:@"%d", [consumedPoint integerValue]];

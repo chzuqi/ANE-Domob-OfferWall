@@ -2,9 +2,6 @@ package cn.domod.ane
 {
 	public class DMOfferWallEvent
 	{
-		public function DMOfferWallEvent()
-		{
-		}
 		/**
 		 * 插页积分墙加载完成 
 		 */		
@@ -25,5 +22,9 @@ package cn.domod.ane
 		 * 积分墙可用状态返回 
 		 */		
 		public static const didCheckEnableStatus:String = "didCheckEnableStatus";
+		/**
+		 * 积分墙关闭 
+		 */		
+		public static const dmOfferWallManagerDidClosed:String = "dmOfferWallManagerDidClosed";
 	}
 }

@@ -4,7 +4,6 @@
     <classEntry path="com.czqsoft.anes.WeixinSdk"/>
     <classEntry path="cn.domod.ane.DMOfferWallEvent"/>
     <classEntry path="cn.domod.ane.DMOfferWallType"/>
-    <classEntry path="cn.domod.ane.DMOfferWallConsumedStatus"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>

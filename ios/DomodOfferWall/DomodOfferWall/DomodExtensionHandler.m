@@ -128,11 +128,14 @@
             
         case eDMOfferWallTypeList:
             NSLog(@"<demo>ListWallDidClosed");
+            DISPATCH_STATUS_EVENT(self.context, [@"dmOfferWallManagerDidClosed" UTF8String], [@"eDMOfferWallTypeList" UTF8String]);
             break;
         case eDMOfferWallTypeVideo:
+            DISPATCH_STATUS_EVENT(self.context, [@"dmOfferWallManagerDidClosed" UTF8String], [@"eDMOfferWallTypeVideo" UTF8String]);
             NSLog(@"<demo>VideoWallDidClosed");
             break;
         case eDMOfferWallTypeInterstitial:
+            DISPATCH_STATUS_EVENT(self.context, [@"dmOfferWallManagerDidClosed" UTF8String], [@"eDMOfferWallTypeInterstitial" UTF8String]);
             NSLog(@"<demo>InterstitialWallDidClosed");
             break;
         default:

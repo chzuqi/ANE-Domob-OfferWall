@@ -60,6 +60,12 @@ typedef enum {
     
 } DMOfferWallType;
 
+typedef enum {
+    
+    eOWActivityEnterReport = 1,// 进入广告列表界面
+    eOWActivityExitReport      // 退出广告列表界面
+}DMOWActivityReprotType;
+
 @class DMOfferWallManager;
 @protocol DMOfferWallManagerDelegate <NSObject>
 @optional
@@ -205,6 +211,11 @@ typedef enum {
  */
 @property (nonatomic, assign) BOOL disableStoreKit;
 
+/**
+ *  用于展示sotre或者展示类广告
+ */
+@property(nonatomic,assign)UIViewController *rootViewController;
+
 #pragma mark - init 初始化相关方法
 /**
  *  使用Publisher ID初始化积分墙
@@ -225,6 +236,14 @@ typedef enum {
  *  @return DMOfferWallManager
  */
 - (id)initWithPublisherID:(NSString *)publisherID andUserID:(NSString *)userID;
+
+/**
+ *  更新登陆用户的User ID
+ *  Update User ID.
+ *
+ *  @param userID      应用中唯一标识用户的ID
+ */
+- (void)updateUserID:(NSString *)userID;
 
 #pragma mark - offer wall present 积分墙展现相关方法
 /**

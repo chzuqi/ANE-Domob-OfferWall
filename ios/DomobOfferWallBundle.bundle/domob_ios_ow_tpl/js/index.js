@@ -843,6 +843,7 @@ var domobjs = {
 						ts:0
 					},
 					PAGE,
+					startTouch,
 					touch
 					;
 				// $t.css({
@@ -881,6 +882,8 @@ var domobjs = {
 
 					cache.ts = e.timeStamp;
 					touch =  e.originalEvent.touches[0];
+					cache.startX = touch.pageX;
+					cache.startY = touch.pageY;
 					update();
 				}).on('touchmove', function(e){
 					e.preventDefault();
@@ -891,8 +894,11 @@ var domobjs = {
 					checkIdle();
 
 					$(this).addClass('anim_css');
-					if(e.timeStamp - cache.ts < 200){
-						this.click();
+					if(e.timeStamp - cache.ts < 300){
+						var diff = Math.abs(cache.startY - touch.pageY)+Math.abs(cache.startX - touch.pageX);
+						if(diff<10){
+							this.click();
+						}
 					}
 					if(setting.sticky){
 						var newPos = {
@@ -926,4 +932,4 @@ var domobjs = {
 		}
 	});
 })(jQuery);
-var version = "ios85472";
+var version = "ios82161";
